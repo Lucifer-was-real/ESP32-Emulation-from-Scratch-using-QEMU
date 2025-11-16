@@ -1,6 +1,5 @@
 ESP32 LED Blink on QEMU
 # ESP32 LED Blink Project on QEMU  
-### Complete Setup + Commands + Debug Fixes
 
 This document explains exactly how I set up ESP-IDF, built the LED Blink project, created the flash image, and successfully ran the firmware on the QEMU ESP32 emulator.  
 It also includes the errors I faced and how I fixed them.
@@ -351,7 +350,8 @@ find ~ -name "qemu-system-xtensa"
 ```
 Working binaries found:
 ```
-<img width="1053" height="97" alt="image" src="https://github.com/user-attachments/assets/9d73b3a0-9467-4ff0-b8c5-503c30851c43" />
+<img width="1053" height="97" alt="image" src="https://github.com/user-attachments/assets/ca24fbf3-fde6-48ba-b152-983ca9a2f61e" />
+
 
 ~/qemu_backup/build/qemu-system-xtensa
 ~/qemu_old/build/qemu-system-xtensa
@@ -370,7 +370,9 @@ Run inside the project folder:
   -drive file=flash_image.bin,if=mtd,format=raw
 ```
 Expected output:
+<img width="1284" height="993" alt="image" src="https://github.com/user-attachments/assets/87f6b8f6-d2d5-4ff0-913b-410d589a8105" />
 
+<img width="703" height="564" alt="image" src="https://github.com/user-attachments/assets/ac578436-0de7-4c27-bede-7ebe6c9d47a6" />
 
 
 Problems Faced (Detailed)
